@@ -1,0 +1,69 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+main {
+  padding: 0px;
+  min-height: 80vh; 
+}
+
+.navbar {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  /* padding: 10px; */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+button {
+    background-color: #6c00628d;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #7845a0;
+}
