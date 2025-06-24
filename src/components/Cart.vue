@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { useCartStore } from '../stores/cartStore.js';
 import { useRouter } from 'vue-router';
 

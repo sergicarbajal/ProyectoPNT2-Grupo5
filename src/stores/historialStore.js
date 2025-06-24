@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useUserStore } from './usersStore'
 
 const API_BASE = 'https://683cbe69199a0039e9e34d64.mockapi.io/ortmovies/compras/'

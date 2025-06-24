@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 import axios from 'axios';
 
 const API_BASE = 'https://68478103ec44b9f3493d3f3e.mockapi.io/api/users';

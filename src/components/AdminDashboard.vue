@@ -1,6 +1,5 @@
 <script setup>
 import { useUserStore } from '../stores/usersStore.js'
-import { useHistorialStore } from '../stores/historialStore.js'
 import { useRouter } from 'vue-router'
 import { onMounted, ref } from 'vue'
 import Nav from './Nav.vue'

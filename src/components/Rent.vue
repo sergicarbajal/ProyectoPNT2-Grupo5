@@ -58,11 +58,8 @@ const filteredMoviesByGenre = computed(() => {
 
 
 async function ActualizarPelisEnCarrito() {
-  // Limpiamos el array actual
-  peliculasAgregadas.value = [];
-  // Obtenemos las películas del carrito desde el store
+   peliculasAgregadas.value = [];
   const itemsEnCarrito = cartStore.items;
-  // Extraemos los IDs de las películas y los guardamos
   peliculasAgregadas.value = itemsEnCarrito.map(item => item.id);
 }
 
@@ -101,6 +98,11 @@ function agregarAlCarrito(movie) {   //HAY QUE PENSAR  ESTA PARTE, ME QUEDE ACA.
         }
 
 }
+
+async function manejarCompraRealizada() {
+  await cargarPeliculasVistas();         // Actualiza historial
+  await ActualizarPelisEnCarrito();      // Limpia el carrito
+}
 //_______________________________________________________________________________
 /*function obtenerVisualizacionesPorGenero() {
     const generosDisponibles = [
@@ -127,10 +129,7 @@ function agregarAlCarrito(movie) {   //HAY QUE PENSAR  ESTA PARTE, ME QUEDE ACA.
     return conteoPorGenero;
 }
 */
-async function manejarCompraRealizada() {
-  await cargarPeliculasVistas();         // Actualiza historial
-  await ActualizarPelisEnCarrito();      // Limpia el carrito
-}
+
 
 </script>
 
